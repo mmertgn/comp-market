@@ -16,6 +16,12 @@
         <meta name="description" content="<?= $katsecili[0]->kat_aciklama ?>">
         <meta name="keywords" content="<?= $katsecili[0]->kat_keywords ?>">
         <?php
+    }elseif($this->uri->segment(1) == "altkategori") {
+        ?>
+        <title><?= $katsecili[0]->kat_adi ?></title>
+        <meta name="description" content="<?= $katsecili[0]->kat_aciklama ?>">
+        <meta name="keywords" content="<?= $katsecili[0]->kat_keywords ?>">
+        <?php
     }
     else {
         ?>

@@ -55,9 +55,9 @@
                                         <td class="product-remove"><a href="<?= base_url() ?>home/isteksil/<?= $rs->id ?>">×</a></td>
                                         <td class="product-thumbnail"><a href="<?= base_url() ?>home/urun_detayi/<?= $rs->urunid ?>"><img src="<?= base_url() ?>uploads/<?= $rs->urunresim ?>" alt="<?= $rs->urunadi ?>" /></a></td>
                                         <td class="product-name"><a href="<?= base_url() ?>home/urun_detayi/<?= $rs->urunid ?>"><?= $rs->urunadi ?></a></td>
-                                        <td class="product-price"><span class="amount-list"> <?= $rs->urunfiyat ?> TL </span></td>
-                                        <td class="product-stock-status"><span class="wishlist-in-stock"><?= $rs->urunmiktar ?></span></td>
-                                        <td class="product-add-to-cart"><a class="button_act button_act_3 button_act_333" href="<?= base_url() ?>home/sepeteekle/<?= $rs->urunid ?>">Sepete Ekle</a></td>
+                                        <td class="product-price"> <?= $rs->urunfiyat ?> TL</td>
+                                        <td class="product-stock-status"><?= $rs->urunmiktar ?></td>
+                                        <td class="product-add-to-cart"><a class="btn btn-danger" href="<?= base_url() ?>home/sepeteekle/<?= $rs->urunid ?>">Sepete Ekle</a></td>
                                     </tr>
                                         <?php
                                     }

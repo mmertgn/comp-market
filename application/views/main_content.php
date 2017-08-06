@@ -157,41 +157,6 @@
     </div>
 </div>
 <!--catagory area end-->
-<!--differ pic area start  YAPILACAK-->
-<div class="differ_pic">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="plus_pic">
-                    <div class="pix_new">
-                        <a href="vc_single_image-wrapper">
-                            <img src="<?= base_url() ?>mainsite/img/differ-pic/differ_pic_1.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="plus_pic">
-                    <div class="pix_new">
-                        <a href="vc_single_image-wrapper">
-                            <img src="<?= base_url() ?>mainsite/img/differ-pic/differ_pic_2.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="plus_pic">
-                    <div class="pix_new">
-                        <a href="vc_single_image-wrapper">
-                            <img src="<?= base_url() ?>mainsite/img/differ-pic/differ_pic_3.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--differ pic area end-->
 
 <!--product area start-->
 <section class="product_area">

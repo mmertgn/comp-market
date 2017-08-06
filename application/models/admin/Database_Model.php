@@ -225,6 +225,34 @@ LEFT JOIN kategoriler ON slider.kategori_id = kategoriler.id
 
         return $query;
     }
+    public function sihirbaz($kat){
+        $query = $this->db->query("SELECT
+urunler.id,
+urunler.adi,
+urunler.altKatId,
+urunler.katId,
+urunler.miktar,
+urunler.e_fiyat,
+urunler.y_fiyat,
+urunler.satis_sayisi,
+urunler.resim,
+urunler.uzunaciklama,
+urunler.aciklama,
+urunler.keywords,
+urunler.tarih,
+urunler.puan,
+urunler.oysayisi,
+alt_kategoriler.adi AS katadi
+FROM
+urunler
+INNER JOIN alt_kategoriler ON urunler.altKatId = alt_kategoriler.id
+WHERE
+alt_kategoriler.adi = '$kat'
+
+");
+
+        return $query;
+    }
     public function marka_sorgusu($id){
         $query = $this->db->query("SELECT
 urunler.id,

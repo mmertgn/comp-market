@@ -171,10 +171,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="shop_menu shop_menu_2">
-                    <ul class="cramb_area cramb_area_5">
+                    <ul class="cramb_area cramb_area_6">
                         <li><a href="<?= base_url() ?>">Anasayfa /</a></li>
-                        <li><?= $urundetay[0]->katadi ?> /</li>
-                        <li class="br-active"><?= $urundetay[0]->altkatadi ?></li>
+                        <li><a href="<?= base_url() ?>kategori/liste/<?= $urundetay[0]->katId ?>"><?= $urundetay[0]->katadi ?> /</a></li>
+                        <li class="br-active"><a href="<?= base_url() ?>altkategori/liste/<?= $urundetay[0]->altKatId ?>"><?= $urundetay[0]->altkatadi ?></a></li>
                     </ul>
                 </div>
             </div>
