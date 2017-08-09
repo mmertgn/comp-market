@@ -272,7 +272,7 @@ class Home extends CI_Controller {
         $this->load->view('footer');
     }
 
-	public function urun_detayi($id)
+    public function urun_detayi($id)
     {
         $query = $this->db->get('kategoriler');
         $data['kategori'] = $query->result();
@@ -284,7 +284,7 @@ class Home extends CI_Controller {
         $data['urundetay'] = $query->result();
         $query = $this->db->query("Select * from resimler where urun_id=$id");
         $data['galeri'] = $query->result();
-        $query = $this->db->query("SELECT kullanicilar.adsoy, urun_yorumlari.tarih, urun_yorumlari.yorum_icerik,urun_yorumlari.id,urun_yorumlari.yorum_yapan_id FROM urun_yorumlari INNER JOIN kullanicilar ON urun_yorumlari.yorum_yapan_id = kullanicilar.id Where urun_yorumlari.urun_id=".$id." ORDER BY urun_yorumlari.tarih DESC");
+        $query = $this->db->query("SELECT kullanicilar.adsoy, urun_yorumlari.tarih, urun_yorumlari.yorum_icerik,urun_yorumlari.id,urun_yorumlari.yorum_yapan_id,urun_yorumlari.durum FROM urun_yorumlari INNER JOIN kullanicilar ON urun_yorumlari.yorum_yapan_id = kullanicilar.id Where urun_yorumlari.urun_id=".$id." ORDER BY urun_yorumlari.tarih DESC");
         $data['yorum'] = $query->result();
         $data['yorumsayisi'] = $query->num_rows();
         $query = $this->Database_Model->secili_urundetay_sorgusu();
@@ -312,6 +312,7 @@ class Home extends CI_Controller {
     {
         $data=array(
             'yorum_icerik'=>$this->input->post('yorum_icerik'),
+            'durum'=>"Onaylı",
             'urun_id'=>$this->input->post('urun_id'),
             'yorum_yapan_id'=>$k_id
         ) ;

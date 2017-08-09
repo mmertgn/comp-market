@@ -408,26 +408,29 @@
                                                 <ol class="commentlist">
                                                     <?php
                                                     foreach ($yorum as $rs) {
-                                                        ?>
-                                                        <li id="li-comment-22" class="comment even thread-even depth-1"
-                                                            itemscope="">
-                                                            <div id="comment-22" class="comment_container">
-                                                                <div class="comment-text">
-                                                                    <p class="meta">
-                                                                        <strong><?= $rs->adsoy ?></strong>
-                                                                        –
-                                                                        <time datetime="2015-12-16T15:26:49+00:00">
-                                                                            <?= $rs->tarih ?>
-                                                                        </time>
-                                                                        :
-                                                                    </p>
-                                                                    <div class="description">
-                                                                        <p><?= $rs->yorum_icerik ?></p>
+                                                        if ($rs->durum == "Onaylı") {
+                                                            ?>
+                                                            <li id="li-comment-22"
+                                                                class="comment even thread-even depth-1"
+                                                                itemscope="">
+                                                                <div id="comment-22" class="comment_container">
+                                                                    <div class="comment-text">
+                                                                        <p class="meta">
+                                                                            <strong><?= $rs->adsoy ?></strong>
+                                                                            –
+                                                                            <time datetime="2015-12-16T15:26:49+00:00">
+                                                                                <?= $rs->tarih ?>
+                                                                            </time>
+                                                                            :
+                                                                        </p>
+                                                                        <div class="description">
+                                                                            <p><?= $rs->yorum_icerik ?></p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </li>
-                                                        <?php
+                                                            </li>
+                                                            <?php
+                                                        }
                                                     }
                                                     ?>
                                                     <?php
