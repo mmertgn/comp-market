@@ -17,6 +17,9 @@
                     <li><a href="<?= base_url() ?>admin/urunler"><i class="icon-star"></i><span
                                 class="hidden-tablet">
                                 Ürün Yönetimi</span></a></li>
+                    <li><a href="<?= base_url() ?>admin/yorumlar"><i class="icon-eject"></i><span
+                                class="hidden-tablet">
+                                Yorum Yönetimi</span></a></li>
                     <li><a href="<?= base_url() ?>admin/slider"><i class="icon-picture"></i><span
                                 class="hidden-tablet">
                                 Slider Yönetimi</span></a></li>

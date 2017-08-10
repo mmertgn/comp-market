@@ -33,7 +33,7 @@
 <!-- googleMap-area-start -->
 <div id="googleMap" ></div>
 <!-- googleMap-end -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvXMFNBcdPRzlmXPIwkNa6zqzFyW9bs4" type="text/javascript"></script>
 <script type="text/javascript">
     /* Google Map js */
     function initialize() {
