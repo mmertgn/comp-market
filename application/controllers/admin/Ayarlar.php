@@ -29,6 +29,9 @@ class Ayarlar extends CI_Controller{
     public function guncelleKaydet($id)
     {
         $data=array(
+            'sirketadi'=>$this->input->post('sirketadi'),
+            'keywords'=>$this->input->post('keywords'),
+            'aciklama'=>$this->input->post('aciklama'),
             'gizlilik'=>$this->input->post('gizlilik'),
             'sartlar'=>$this->input->post('sartlar'),
             'sozlesme'=>$this->input->post('sozlesme')

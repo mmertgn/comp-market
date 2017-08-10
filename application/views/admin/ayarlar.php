@@ -29,6 +29,28 @@
         <div class="box-content">
             <form action="<?= base_url()?>admin/ayarlar/guncellekaydet/<?=$veri[0]->id?>" method="post" class="form-horizontal">
                 <div class="control-group hidden-phone">
+                    <label class="control-label" for="textarea2">Site Başlığı</label>
+                    <div class="controls">
+                        <input type="text" name="sirketadi" value="<?= $veri[0]->sirketadi?>">
+                    </div>
+                </div>
+                <div class="control-group hidden-phone">
+                    <label class="control-label" for="textarea2">Site Description</label>
+                    <div class="controls">
+                        <textarea class="cleditor" id="textarea2" rows="3" cols="10" name="aciklama"><?php
+                            echo $veri[0]->aciklama;
+                            ?></textarea>
+                    </div>
+                </div>
+                <div class="control-group hidden-phone">
+                    <label class="control-label" for="textarea2">Site Keywords</label>
+                    <div class="controls">
+                        <textarea class="cleditor" id="textarea2" rows="3" cols="10" name="keywords"><?php
+                            echo $veri[0]->keywords;
+                            ?></textarea>
+                    </div>
+                </div>
+                <div class="control-group hidden-phone">
                     <label class="control-label" for="textarea2">Gizlilik Politikası</label>
                     <div class="controls">
                         <textarea class="cleditor" id="textarea2" rows="3" cols="10" name="gizlilik"><?php
